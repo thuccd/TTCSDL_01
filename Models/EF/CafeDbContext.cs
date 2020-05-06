@@ -8,7 +8,7 @@ namespace Models.EF
     public partial class CafeDbContext : DbContext
     {
         public CafeDbContext()
-            : base("name=CafeDbContext")
+            : base("name=CafeDbContext1")
         {
         }
 
