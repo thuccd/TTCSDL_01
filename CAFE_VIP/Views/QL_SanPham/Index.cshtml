@@ -1,0 +1,26 @@
+﻿@using CAFE_VIP.Models ;
+@model IEnumerable<Models.EF.PRODUCT>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    //khởi tao control webgrit 
+    WebGrid grid = new WebGrid(source: Model, rowsPerPage: 20);
+
+
+}
+@* thể hiện dữ liệu htoong qua webGrit *@
+@grid.GetHtml(
+    tableStyle:"Grid table" ,
+    headerStyle:"GridHead" ,
+    footerStyle:"GridFooter",
+    rowStyle:"GridRow" ,
+    alternatingRowStyle:"griAltRow", 
+    columns: grid.Columns(
+    grid.Column("ProductID","Mã Sản Phẩm "),
+    grid.Column("ProductName", "Tên Sản Phẩm"),
+    grid.Column("ProductDescription","Mô tả ",format:p=> Html.Raw("nội dung html"))))
+
+
+<h2>Index</h2>
+
