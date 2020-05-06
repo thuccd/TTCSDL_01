@@ -129,16 +129,20 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\CatelogyController.cs" />
-    <Compile Include="Areas\Admin\Controllers\CustomerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CUSTOMERsController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrderController.cs" />
-    <Compile Include="Areas\Admin\Controllers\PersonController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PeopleController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\ResourceController.cs" />
+    <Compile Include="Common\CommonConstant.cs" />
+    <Compile Include="Common\UserLogin.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Models\LoginModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -179,14 +183,21 @@
     <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Catelogy\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Customer\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Person\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Order\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Resource\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Catelogy\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Resource\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Person\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\CUSTOMERs\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\CUSTOMERs\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\CUSTOMERs\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\CUSTOMERs\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\CUSTOMERs\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\People\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\People\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\People\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\People\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\People\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -207,13 +218,15 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_LoginLayout.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Login\SignUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Base\" />
+    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
