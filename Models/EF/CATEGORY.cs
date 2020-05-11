@@ -21,9 +21,6 @@ namespace Models.EF
         [StringLength(250)]
         public string CategoryName { get; set; }
 
-        [StringLength(50)]
-        public string MetaKeyword { get; set; }
-
         public DateTime? CreatedDate { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
