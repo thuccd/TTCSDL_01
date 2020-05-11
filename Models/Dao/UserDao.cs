@@ -10,7 +10,7 @@ namespace Models.Dao
 {
     public class UserDao
     {
-        CafeDbContext db = null;
+       CafeDbContext db = null;
         public UserDao()
         {
             db = new CafeDbContext();//Khởi tạo db

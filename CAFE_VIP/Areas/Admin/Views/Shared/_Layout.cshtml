@@ -3,7 +3,7 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
+@*<!DOCTYPE html>*@
 <html lang="en">
 
 <head>
@@ -49,18 +49,18 @@
                     <li>
                         @Html.ActionLink("CUSTOMER", "Index", "CUSTOMERs", null, new { @class = "click" })
                     </li>
-                    <li >
+                    <li>
 
                         @Html.ActionLink("PERSON", "Index", "People", null, new { @class = "click" })
                     </li>
                     <li>
-                        @Html.ActionLink("ORDER","Index", "Order", null, new { @class = "click" })
+                        @Html.ActionLink("ORDER", "Index", "Order", null, new { @class = "click" })
                     </li>
-                    <li >
+                    <li>
 
                         @Html.ActionLink("RESOURCE", "Index", "Resource", null, new { @class = "click" })
                     </li>
-                    
+
                 </ul>
             </div>
         </div>
@@ -76,7 +76,7 @@
                                 <span class="navbar-toggler-bar bar3"></span>
                             </button>
                         </div>
-                        <a class="navbar-brand" href="index.html">Coffee Hello</a>
+                        <a class="navbar-brand" href="index.html"></a>
                     </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="navbar-nav">
@@ -106,8 +106,8 @@
                 </div>
             </nav>
             <!-- End Navbar -->
-            @RenderBody()
-        </div>
+        
+        
         <!-- Footer -->
         <footer class="footer footer-black  footer-white ">
             <div class="container-fluid">
@@ -120,6 +120,9 @@
                 </div>
             </div>
         </footer>
+    @RenderBody()
+
+    </div>
     </div>
     <!--   Core JS Files   -->
     <script src="~/Content/js/jquery.min.js"></script>

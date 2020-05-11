@@ -133,10 +133,11 @@
     <Compile Include="Areas\Admin\Controllers\HomeAdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrderController.cs" />
     <Compile Include="Areas\Admin\Controllers\PeopleController.cs" />
-    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PRODUCTController.cs" />
     <Compile Include="Areas\Admin\Controllers\ResourceController.cs" />
     <Compile Include="Common\CommonConstant.cs" />
     <Compile Include="Common\UserLogin.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\QL_SanPhamController.cs" />
     <Compile Include="Global.asax.cs">
@@ -147,6 +148,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Admin\css\admin.css" />
+    <Content Include="Content\Admin\css\bootstrap-grid.css" />
+    <Content Include="Content\Admin\css\bootstrap-grid.min.css" />
+    <Content Include="Content\Admin\css\bootstrap-reboot.css" />
+    <Content Include="Content\Admin\css\bootstrap-reboot.min.css" />
+    <Content Include="Content\Admin\css\bootstrap.css" />
+    <Content Include="Content\Admin\css\bootstrap.min.css" />
+    <Content Include="Content\Admin\css\icomoon.css" />
+    <Content Include="Content\Admin\css\paper-dashboard.css" />
+    <Content Include="Content\Admin\images\add.png" />
+    <Content Include="Content\Admin\images\burger-2.jpg" />
+    <Content Include="Content\Admin\images\logo-small.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -182,11 +195,9 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\HomeAdmin\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Catelogy\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Order\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Resource\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Catelogy\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Resource\Create.cshtml" />
     <Content Include="Areas\Admin\Views\CUSTOMERs\Create.cshtml" />
@@ -199,6 +210,16 @@
     <Content Include="Areas\Admin\Views\People\Details.cshtml" />
     <Content Include="Areas\Admin\Views\People\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\People\Index.cshtml" />
+    <Content Include="Content\Admin\css\bootstrap-grid.css.map" />
+    <Content Include="Content\Admin\css\bootstrap-grid.min.css.map" />
+    <Content Include="Content\Admin\css\bootstrap-reboot.css.map" />
+    <Content Include="Content\Admin\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\Admin\css\bootstrap.css.map" />
+    <Content Include="Content\Admin\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Admin\Views\PRODUCT\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PRODUCT\TaoMoi.cshtml" />
+    <Content Include="Areas\Admin\Views\PRODUCT\ChinhSua.cshtml" />
+    <Content Include="Areas\Admin\Views\PRODUCT\Xoa.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -223,12 +244,14 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\SignUp.cshtml" />
     <Content Include="Views\QL_SanPham\Index.cshtml" />
+    <Content Include="Views\QL_SanPham\TaoMoi.cshtml" />
+    <Content Include="Views\QL_SanPham\ChinhSua.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Views\Base\" />
-    <Folder Include="Views\Base\" />
+    <Folder Include="Content\HinhAnhSP\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
