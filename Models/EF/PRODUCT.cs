@@ -7,7 +7,7 @@ namespace Models.EF
     using System.Data.Entity.Spatial;
 
     [Table("PRODUCT")]
-    public partial class PRODUCT
+    public partial  class PRODUCT
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PRODUCT()

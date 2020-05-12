@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Models.EF;
-
+using PagedList.Mvc;
+using PagedList;
 
 namespace Models.Dao
 {
     public class UserDao
     {
-       CafeDbContext db = null;
+        CafeDbContext db = null;
         public UserDao()
         {
             db = new CafeDbContext();//Khởi tạo db
@@ -21,6 +22,10 @@ namespace Models.Dao
             db.USERs.Add(entity);
             db.SaveChanges();
             return entity.UserId;
+        }
+        public IEnumerable<RESOURCE> ListAllPaging(int page , int pageSize)
+        {
+            return db.RESOURCES.OrderByDescending(x=>x.Resourcesname).ToPagedList(page, pageSize);
         }
         public USER GetbyID(string userName)
         {
