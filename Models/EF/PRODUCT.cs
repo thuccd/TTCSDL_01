@@ -33,6 +33,9 @@ namespace Models.EF
 
         public int? ProductStock { get; set; }
 
+        [StringLength(250)]
+        public string MetaKeyword { get; set; }
+
         public bool? ProductStatus { get; set; }
 
         public DateTime? CreatedDate { get; set; }
